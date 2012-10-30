@@ -1,6 +1,6 @@
 # Letterpress-Helper  
 ----
-A tool for [Letterpress]*(An iOS Game)*  
+A tool for [Letterpress] *(An iOS Game)*  
 
 `:)` Have fun!
 
