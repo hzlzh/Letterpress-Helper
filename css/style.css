@@ -426,7 +426,7 @@ body ul li {
   background: #e6e5e2;
   width: 114px;
   display: block;
-  font-size: 47px;
+  font-size: 50px;
   line-height: 57px;
   text-align: center;
   padding: 26px 0 31px;
@@ -475,6 +475,9 @@ body ul li {
 }
 .wrapper .letters-pool ul li {
   float: left;
+}
+.wrapper .letters-pool ul li span {
+  font-size: 68px;
 }
 .footer {
   margin-top: 14px;
