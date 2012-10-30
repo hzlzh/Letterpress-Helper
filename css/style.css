@@ -481,6 +481,9 @@ body ul li {
   margin-bottom: 14px;
 }
 .footer .copyright {
+  line-height: 20px;
+  overflow: hidden;
+  position: relative;
   text-align: center;
 }
 .footer .copyright a {
@@ -497,4 +500,11 @@ body ul li {
 }
 .footer .copyright a.red:hover {
   background-color: #ff432f;
+}
+.footer .copyright .tweet-button {
+  right: 5%;
+  display: inline-block;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
 }

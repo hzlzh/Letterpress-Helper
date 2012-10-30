@@ -90,7 +90,7 @@ body{
   }
 }
 .footer{margin-top: 14px;margin-bottom: 14px;
-  .copyright{text-align: center;
+  .copyright{line-height: 20px;overflow: hidden;position: relative;text-align: center;
     a{color: #f0efec;background-color: @l-blue;padding: 1px 3px;text-decoration: none;
       &:hover{background-color: @d-blue;}
       &.red{
@@ -98,5 +98,6 @@ body{
         &:hover{background-color: @d-red;}
       }
     }
+    .tweet-button{right:5%;display: inline-block;line-height: 20px;position: absolute;top: 0;}
   }
 }
