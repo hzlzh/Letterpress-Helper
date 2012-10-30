@@ -1,4 +1,4 @@
-<MKM version="2.0" imageFileUrl="file:///Users/hzlzh/Project/hzlzh/Letterpress-Helper/Source/Letterpress-iPad-Screenshot.PNG">
+<MKM version="2.0" imageFileUrl="file:///Users/hzlzh/Project/hzlzh/Letterpress-Helper/Resource/Letterpress-iPad-Screenshot.png">
   <Marks>
     <LengthMark direction="3" color="16711680" length="106" x="256" y="0"/>
     <LengthMark direction="12" color="16711680" length="227" x="219" y="143"/>
@@ -30,5 +30,10 @@
     <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="15263716" offsetX="25" offsetY="10" x="1557" y="841"/>
     <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="15132130" offsetX="25" offsetY="10" x="1568" y="1074"/>
     <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="15790060" offsetX="25" offsetY="10" x="679" y="87"/>
+    <LengthMark direction="3" color="16711680" length="50" x="1917" y="10"/>
+    <LengthMark direction="12" color="16711680" length="28" x="2003" y="36"/>
+    <LengthMark direction="3" color="16711680" length="52" x="537" y="106"/>
+    <LengthMark direction="3" color="16711680" length="62" x="531" y="272"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="15329509" offsetX="25" offsetY="10" x="1570" y="1012"/>
   </Marks>
 </MKM>
