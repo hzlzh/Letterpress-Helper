@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
 
     var init = function(){
       // jrumble effect init
-      $('.letters-pool .letter-box  input').jrumble().jrumble({
+      $('.letters-pool .letter-box input').jrumble().jrumble({
         speed: 0
       });
     };
@@ -43,7 +43,7 @@ jQuery(document).ready(function($) {
     setTimeout(function() {
       temp.trigger('stopRumble');
     }, 420);
-    $(this).parent().next().find('input').select().trigger('startRumble');
+    $(this).next().select().trigger('startRumble');
   });
 
   LH.update_count($('.result-box .letter-box span').length);
