@@ -352,7 +352,7 @@ body {
   font-family: "museo_sans_rounded_500regular";
   font-size: 14px;
   background-color: #f0efec;
-  width: 960px;
+  width: 800px;
   margin: 0 auto;
   color: #585858;
 }
@@ -384,6 +384,8 @@ body ul li {
   display: block;
 }
 .header ul#tool-bar li.count-board {
+  overflow: hidden;
+  line-height: 20px;
   font-size: 20px;
   left: 50%;
   margin-left: -76px;
@@ -393,11 +395,11 @@ body ul li {
 }
 .header ul#tool-bar li.count-board .word-left {
   color: #ff432f;
-  margin-right: 57px;
+  float: left;
 }
 .header ul#tool-bar li.count-board .word-count {
   color: #00a2ff;
-  margin-left: 57px;
+  float: right;
 }
 .header ul#tool-bar li.right {
   float: right;
@@ -405,7 +407,10 @@ body ul li {
   margin-top: 5px;
   margin-right: 10px;
 }
-.header ul#tool-bar li.right span {
+.header ul#tool-bar li.right input {
+  font-weight: bolder;
+  width: 45px;
+  border: none;
   color: #f0efec;
   background-color: #a9d9f2;
   padding: 10px 14px;
@@ -418,32 +423,42 @@ body ul li {
   background-clip: padding-box;
   cursor: pointer;
 }
-.header ul#tool-bar li.right span:hover {
+.header ul#tool-bar li.right input:hover {
   background-color: #78c8f5;
 }
-.wrapper ul.letter-box li span {
+.wrapper .letter-box input,
+.wrapper .letter-box span {
   color: #182831;
+  border: none;
+  height: 57px;
   background: #e6e5e2;
   width: 114px;
   display: block;
+  outline: none;
+  text-transform: uppercase;
   font-size: 50px;
   line-height: 57px;
   text-align: center;
   padding: 26px 0 31px;
 }
-.wrapper ul.letter-box li span.odd {
+.wrapper .letter-box input.odd,
+.wrapper .letter-box span.odd {
   background-color: #e9e8e5;
 }
-.wrapper ul.letter-box li span.red {
+.wrapper .letter-box input.red,
+.wrapper .letter-box span.red {
   background-color: #f7998d;
 }
-.wrapper ul.letter-box li span.red.double {
+.wrapper .letter-box input.red.double,
+.wrapper .letter-box span.red.double {
   background-color: #ff432f;
 }
-.wrapper ul.letter-box li span.blue {
+.wrapper .letter-box input.blue,
+.wrapper .letter-box span.blue {
   background-color: #78c8f5;
 }
-.wrapper ul.letter-box li span.blue.double {
+.wrapper .letter-box input.blue.double,
+.wrapper .letter-box span.blue.double {
   background-color: #00a2ff;
 }
 .wrapper .result-box {
@@ -454,29 +469,24 @@ body ul li {
   display: table;
   margin: 0 auto;
 }
-.wrapper .result-box .result ul {
+.wrapper .result-box .result .letter-box {
   overflow: hidden;
 }
-.wrapper .result-box .result ul li {
+.wrapper .result-box .result .letter-box span {
   float: left;
-}
-.wrapper .result-box .result ul li span {
-  width: 40px;
-  padding-left: 10%;
-  padding-right: 10%;
+  width: 45px;
+  cursor: default;
 }
 .wrapper .letters-pool {
   width: 570px;
   margin: 17px auto 0;
   display: block;
 }
-.wrapper .letters-pool ul {
+.wrapper .letters-pool .letter-box {
   overflow: hidden;
 }
-.wrapper .letters-pool ul li {
+.wrapper .letters-pool .letter-box input {
   float: left;
-}
-.wrapper .letters-pool ul li span {
   font-size: 68px;
 }
 .footer {
@@ -505,7 +515,7 @@ body ul li {
   background-color: #ff432f;
 }
 .footer .copyright .tweet-button {
-  right: 5%;
+  right: 0;
   display: inline-block;
   line-height: 20px;
   position: absolute;

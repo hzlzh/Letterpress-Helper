@@ -9,7 +9,7 @@
     %link{:rel => "stylesheet", :href  => "css/style.css"}
     %link{:rel => "alternate", :typr => "application/rss+xml", :title => "RSS Feed", :href  => "css/style.css"}
 
-    %script{:src  => "js/modernizr.js"}
+    %script{:src  => "js/libs/modernizr.js"}
     %script{:src  => "http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
     :javascript
       !window.jQuery && document.write('<script src="js/jquery-1.8.2.min.js"><\/script>')
@@ -33,83 +33,48 @@
           %span.word-left 8
           %span.word-count 15
         %li.right
-          %span Submit
+          %input{:value => "Submit"}
     .wrapper
       .result-box
         .result
-          %ul.letter-box
-            %li
-              %span.odd H
-            %li
-              %span.red E
-            %li
-              %span.odd L
-            %li
-              %span L
-            %li
-              %span.odd O
-            %li
-              %span W
-            %li
-              %span.odd O
-            %li
-              %span R
-            %li
-              %span.odd L
-            %li
-              %span D
-      .letters-pool
-        %ul.letter-box
-          %li
-            %span.odd A
-          %li
-            %span B
-          %li
-            %span.odd C
-          %li
-            %span.blue D
-          %li
+          .letter-box
+            %span.odd H
+            %span.red E
             %span.odd L
-          %li
-            %span M
-          %li
-            %span.odd A
-          %li
-            %span B
-          %li
-            %span.odd.blue.double L
-          %li
-            %span.blue V
-          %li
-            %span.odd G
-          %li
-            %span.red P
-          %li
-            %span.odd W
-          %li
-            %span O
-          %li
-            %span.odd.blue.double H
-          %li
-            %span.red D
-          %li
-            %span.odd.red.double R
-          %li
-            %span F
-          %li
-            %span.odd D
-          %li
-            %span E
-          %li
-            %span.odd F
-          %li
-            %span A
-          %li
-            %span.odd I
-          %li
-            %span X
-          %li
-            %span.odd D
+            %span L
+            %span.odd O
+            %span.blue W
+            %span.odd O
+            %span R
+            %span.odd L
+            %span D
+      .letters-pool
+        .letter-box
+          %input.odd{:value => 'J',:maxlength => '1'}
+          %input{:value => 'U',:maxlength => '1'}
+          %input.odd{:value => 'S',:maxlength => '1'}
+          %input.blue{:value => 'T',:maxlength => '1'}
+          %input.odd.blue.double{:value => 'B',:maxlength => '1'}
+          %input{:value => 'P',:maxlength => '1'}
+          %input.odd{:value => 'T',:maxlength => '1'}
+          %input{:value => 'A',:maxlength => '1'}
+          %input.odd.blue.double{:value => 'P',:maxlength => '1'}
+          %input{:value => 'M',:maxlength => '1'}
+          %input.odd{:value => 'X',:maxlength => '1'}
+          %input.red{:value => 'H',:maxlength => '1'}
+          %input.odd{:value => 'E',:maxlength => '1'}
+          %input{:value => 'R',:maxlength => '1'}
+          %input.odd{:value => 'E',:maxlength => '1'}
+          %input.red{:value => 'H',:maxlength => '1'}
+          %input.odd{:value => 'A',:maxlength => '1'}
+          %input{:value => 'V',:maxlength => '1'}
+          %input.odd{:value => 'E',:maxlength => '1'}
+          %input{:value => 'S',:maxlength => '1'}
+          %input.odd{:value => 'N',:maxlength => '1'}
+          %input.red.double{:value => 'F',:maxlength => '1'}
+          %input.odd.red{:value => 'A',:maxlength => '1'}
+          %input.red{:value => 'N',:maxlength => '1'}
+          %input.odd{:value => '!',:maxlength => '1'}
     %footer.footer
       .copyright 
         Source code on 
@@ -121,4 +86,5 @@
         .tweet-button
           <a href="https://twitter.com/share" class="twitter-share-button" >Tweet</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    %script{:src  => "js/libs/jquery.jrumble.1.3.min.js"}
     %script{:src  => "js/main.js"}
