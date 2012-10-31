@@ -22,13 +22,7 @@
 @l-gray: #E9E8E5;
 @d-gray: #E6e5e2;
 
-body{
-  font-family:"museo_sans_rounded_500regular";
-  font-size:14px;
-  background-color: @bg;
-  width:800px;
-  margin:0 auto;
-  color: @black;
+body{font-family:"museo_sans_rounded_500regular";font-size:14px;background-color: @bg;width:800px;margin:0 auto;color: @black;
   ul{margin:0;padding:0;
     li{list-style:none;}
   }
@@ -38,12 +32,13 @@ body{
     li.left{float:left;font-weight: bolder;margin-top: 13px;margin-left: 21px;cursor:pointer;
       span{display: block;}
     }
-    li.count-board{overflow: hidden;line-height:20px;font-size: 20px;left: 50%;margin-left: -76px;margin-top: 16px;position: absolute;width: 152px;
-      .word-left{color: @d-red;float:left;}
-      .word-count{color: @d-blue;float:right;}
+    li.count-board{overflow: hidden;line-height:20px;font-size: 20px;left: 54%;margin-left: -76px;margin-top: 16px;position: absolute;width: 152px;
+      #word-left{color: @d-red;float:left;}
+      #word-count{height: 20px;line-height: 20px;color: @d-blue;float:right;border:none;width: 24px;background-color: transparent;}
+      .tips{float: right;font-size: 12px;color: @l-blue;}
     }
     li.right{float:right;font-weight: bolder;margin-top: 5px;margin-right: 10px;
-      input{font-weight: bolder;width:45px;border: none;color:#f0efec;background-color: #a9d9f2;padding: 10px 14px;display: block;.rounded(10px);cursor:pointer;
+      input{font-weight: bolder;width:65px;border: none;color:#f0efec;background-color: #a9d9f2;padding: 10px 14px;display: block;.rounded(10px);cursor:pointer;
         &:hover{background-color: @l-blue;}
       }
     }
@@ -72,13 +67,20 @@ body{
   .result-box{overflow: hidden;
     .result{clear: both;display: table;margin: 0 auto;
       .letter-box{overflow: hidden;
-        span{float: left;width: 45px;cursor:default;}
+        span{float: left;width: 45px;cursor:default;
+          &.low{text-transform: lowercase;}
+        }
       }
     }
   }
-  .letters-pool{width: 570px;margin: 17px auto 0;display: block;
+  .letters-pool{width: 570px;margin: 17px auto 0;display: block;position:relative;
     .letter-box{overflow: hidden;
       input{float: left;font-size:68px;}
+    }
+    .all-box{max-height: 400px;overflow-y: scroll;position: absolute;right: -130px;width: 120px;
+      ul{
+        li{text-transform: capitalize;}
+      }
     }
   }
 }
@@ -91,6 +93,7 @@ body{
         &:hover{background-color: @d-red;}
       }
     }
+    abbr{cursor:default;}
     .tweet-button{right:0;display: inline-block;line-height: 20px;position: absolute;top: 0;}
   }
 }

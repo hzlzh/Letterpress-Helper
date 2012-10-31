@@ -30,10 +30,12 @@
         %li.left
           %span Clear
         %li.count-board
-          %span.word-left 8
-          %span.word-count 15
+          %span#word-left 15
+          %span.tips <- Length
+          %input#word-count{:value => "10",:maxlength => '2'}
         %li.right
-          %input{:value => "Submit"}
+          %form
+            %input{:value => "Submit", :type => "submit"}
     .wrapper
       .result-box
         .result
@@ -49,6 +51,8 @@
             %span.odd L
             %span D
       .letters-pool
+        .all-box
+          %ul
         .letter-box
           %input.odd{:value => 'J',:maxlength => '1'}
           %input{:value => 'U',:maxlength => '1'}
@@ -74,10 +78,11 @@
           %input.red.double{:value => 'F',:maxlength => '1'}
           %input.odd.red{:value => 'A',:maxlength => '1'}
           %input.red{:value => 'N',:maxlength => '1'}
-          %input.odd{:value => '!',:maxlength => '1'}
+          %input.odd{:value => 'O',:maxlength => '1'}
     %footer.footer
       .copyright 
-        Source code on 
+        %abbr{:title => "Letterpress Helper v1.0b"} Letterpress Helper
+        on 
         %a.red{:href => "https://github.com/hzlzh/Letterpress-Helper", :target => "_blank"} Github
         \ by 
         %a{:href => "https://github.com/codersnake", :target => "_blank"} @CoderSnake
