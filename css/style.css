@@ -387,19 +387,29 @@ body ul li {
   overflow: hidden;
   line-height: 20px;
   font-size: 20px;
-  left: 50%;
+  left: 54%;
   margin-left: -76px;
   margin-top: 16px;
   position: absolute;
   width: 152px;
 }
-.header ul#tool-bar li.count-board .word-left {
+.header ul#tool-bar li.count-board #word-left {
   color: #ff432f;
   float: left;
 }
-.header ul#tool-bar li.count-board .word-count {
+.header ul#tool-bar li.count-board #word-count {
+  height: 20px;
+  line-height: 20px;
   color: #00a2ff;
   float: right;
+  border: none;
+  width: 24px;
+  background-color: transparent;
+}
+.header ul#tool-bar li.count-board .tips {
+  float: right;
+  font-size: 12px;
+  color: #78c8f5;
 }
 .header ul#tool-bar li.right {
   float: right;
@@ -409,7 +419,7 @@ body ul li {
 }
 .header ul#tool-bar li.right input {
   font-weight: bolder;
-  width: 45px;
+  width: 65px;
   border: none;
   color: #f0efec;
   background-color: #a9d9f2;
@@ -477,10 +487,14 @@ body ul li {
   width: 45px;
   cursor: default;
 }
+.wrapper .result-box .result .letter-box span.low {
+  text-transform: lowercase;
+}
 .wrapper .letters-pool {
   width: 570px;
   margin: 17px auto 0;
   display: block;
+  position: relative;
 }
 .wrapper .letters-pool .letter-box {
   overflow: hidden;
@@ -488,6 +502,16 @@ body ul li {
 .wrapper .letters-pool .letter-box input {
   float: left;
   font-size: 68px;
+}
+.wrapper .letters-pool .all-box {
+  max-height: 400px;
+  overflow-y: scroll;
+  position: absolute;
+  right: -130px;
+  width: 120px;
+}
+.wrapper .letters-pool .all-box ul li {
+  text-transform: capitalize;
 }
 .footer {
   margin-top: 14px;
@@ -513,6 +537,9 @@ body ul li {
 }
 .footer .copyright a.red:hover {
   background-color: #ff432f;
+}
+.footer .copyright abbr {
+  cursor: default;
 }
 .footer .copyright .tweet-button {
   right: 0;

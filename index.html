@@ -37,11 +37,14 @@
           <span>Clear</span>
         </li>
         <li class="count-board">
-          <span class="word-left">8</span>
-          <span class="word-count">15</span>
+          <span id="word-left">15</span>
+          <span class="tips"><- Length</span>
+          <input id="word-count" maxlength="2" value="10">
         </li>
         <li class="right">
-          <input value="Submit">
+          <form>
+            <input type="submit" value="Submit">
+          </form>
         </li>
       </ul>
     </header>
@@ -63,6 +66,9 @@
         </div>
       </div>
       <div class="letters-pool">
+        <div class="all-box">
+          <ul></ul>
+        </div>
         <div class="letter-box">
           <input class="odd" maxlength="1" value="J">
           <input maxlength="1" value="U">
@@ -88,13 +94,14 @@
           <input class="red double" maxlength="1" value="F">
           <input class="odd red" maxlength="1" value="A">
           <input class="red" maxlength="1" value="N">
-          <input class="odd" maxlength="1" value="!">
+          <input class="odd" maxlength="1" value="O">
         </div>
       </div>
     </div>
     <footer class="footer">
       <div class="copyright">
-        Source code on
+        <abbr title="Letterpress Helper v1.0b">Letterpress Helper</abbr>
+        on
         <a class="red" href="https://github.com/hzlzh/Letterpress-Helper" target="_blank">Github</a>
          by
         <a href="https://github.com/codersnake" target="_blank">@CoderSnake</a>
