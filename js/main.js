@@ -31,7 +31,7 @@ jQuery(document).ready(function($) {
         },100);
 
           for (index in words){
-            $all.prepend('<li>'+words[index]+'</li>')
+            $all.prepend('<li><span>'+words[index]+'</span></li>')
           }
         };
       var clear_box = function() {
@@ -66,6 +66,7 @@ jQuery(document).ready(function($) {
           setTimeout(function() {
             $('#word-count,#first-letter,#submit-button').tooltip('hide');
           }, 5000);
+          ANSW.Trigger.showLogoIfEnabled("AnswerTips_anim_105x25.gif","");
         };
 
       return {
