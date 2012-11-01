@@ -466,6 +466,7 @@ body ul li {
   float: left;
 }
 .header ul#tool-bar li.count-board #word-count {
+  outline: none;
   height: 20px;
   line-height: 20px;
   color: #00a2ff;
@@ -567,15 +568,20 @@ body ul li {
   font-size: 68px;
 }
 .wrapper .letters-pool .all-box {
-  max-height: 400px;
+  max-height: 228px;
   overflow-y: auto;
   position: absolute;
   right: -130px;
-  width: 120px;
+  width: 114px;
+  background-color: #A9D9F2;
 }
 .wrapper .letters-pool .all-box #down-count {
-  display: block;
-  text-align: center;
+  display: none;
+  height: 16px;
+  margin-left: 2px;
+}
+.wrapper .letters-pool .all-box ul {
+  min-height: 98px;
 }
 .wrapper .letters-pool .all-box ul li {
   text-transform: capitalize;

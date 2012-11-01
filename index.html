@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta content="width=device-width" name="viewport">
     <title>Letterpress-Helper</title>
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="letterpress,helper,tool,plugin,dictionary,iphone,game" name="keywords">
+    <meta content="Letterpress-Helper is a tool for Letterpress, help you learn more words which you don't spell at the first time." name="description">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/style.css" rel="alternate" title="RSS Feed" typr="application/rss+xml">
     <link href="favicon.ico" rel="shortcut icon">
     <script src="js/libs/modernizr.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -51,30 +50,29 @@
     <div class="wrapper">
       <div class="result-box">
         <div class="result">
-          <div class="letter-box">
+          <div class="letter-box" id="result-box" rel="tooltip" title="4. Double click letter load dictionary.">
             <span class="odd">L</span>
             <span class="red">E</span>
             <span class="odd">T</span>
             <span>T</span>
             <span class="odd">E</span>
-            <span class="blue">R</span>
-            <span>-</span>
-            <span class="odd">H</span>
-            <span>E</span>
-            <span class="odd">L</span>
-            <span>P</span>
-            <span class="odd">E</span>
             <span>R</span>
+            <span class="odd">-</span>
+            <span class="blue">H</span>
+            <span class="odd">E</span>
+            <span>L</span>
+            <span class="odd">P</span>
+            <span>E</span>
+            <span class="odd">R</span>
           </div>
         </div>
       </div>
       <div class="letters-pool">
         <div class="all-box">
           <div id="down-count"></div>
-          <ul></ul>
         </div>
         <div class="letter-box">
-          <input class="odd" id="first-letter" maxlength="1" rel="tooltip" title="1. Type 25 letters here" value="&gt;">
+          <input class="odd" id="first-letter" maxlength="1" rel="tooltip" title="1. Type 1~25 letters here" value="&gt;">
           <input maxlength="1" value=":">
           <input class="odd" maxlength="1" value="">
           <input maxlength="1" value="">
@@ -104,7 +102,7 @@
     </div>
     <footer class="footer">
       <div class="copyright">
-        <abbr id="readme" rel="tooltip" title="NO OFFENSE, Letterpress(iOS) is an awesome Game, we love it and happen to make this tool, hope u won't use it in real battle games :(">Letterpress Helper</abbr>
+        <abbr id="readme" rel="tooltip" title="NO OFFENSE, Letterpress(iOS) is an awesome Game, we love it and just happen to make this tool, hope u won't use it in real battle games :(">Letterpress Helper</abbr>
         on
         <a class="red" href="https://github.com/hzlzh/Letterpress-Helper/" target="_blank">Github</a>
          by
