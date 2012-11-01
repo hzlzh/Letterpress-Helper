@@ -4,5 +4,3 @@
 *.sublime-project
 *.sublime-workspace
 *.sprt
-*.haml
-*.less

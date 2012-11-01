@@ -12,23 +12,14 @@ jQuery(document).ready(function($) {
         };
 
       var update_result = function($result, words) {
-        if(typeof(show_4000)!="undefined")
-          clearInterval(show_4000);
+        //clearInterval(show_4000);
 
         var show_word = function(){
           $('#down-count').html(4);
           var random_key = parseInt(Math.random() * words.length);
-          var result_query = ".all-box li[data-group='" + words.length + "'] span";
-          console.log(result_query);
-          console.log($(result_query)[random_key]);
-          $result.html('<span class="blue">' + $($(result_query)[random_key]).html().split('').join('</span><span>') + '</span>');
+          $result.html('<span class="blue">' + words[random_key].split('').join('</span><span>') + '</span>');
         };
 
-
-
-          for (index in words){
-            $all.prepend('<li data-group="'+words.length+'"><span>'+words[index]+'</span></li>')
-          }
         show_word();
 
         show_4000 = setInterval(function(){
@@ -38,6 +29,10 @@ jQuery(document).ready(function($) {
         show_100 = setInterval(function(){
           $('#down-count').html(parseFloat($('#down-count').html()-0.1).toFixed(1));
         },100);
+
+          for (index in words){
+            $all.prepend('<li><span>'+words[index]+'</span></li>')
+          }
         };
       var clear_box = function() {
         $('.letter-box input').val('');

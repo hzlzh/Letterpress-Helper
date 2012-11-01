@@ -608,6 +608,7 @@ body ul li {
 }
 .footer .copyright abbr {
   cursor: default;
+  border-bottom: 1px dotted #78c8f5;
 }
 .footer .copyright .tweet-button {
   right: 0;
