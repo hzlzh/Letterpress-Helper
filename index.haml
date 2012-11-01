@@ -39,46 +39,49 @@
       .result-box
         .result
           .letter-box
-            %span.odd H
+            %span.odd L
             %span.red E
+            %span.odd T
+            %span T
+            %span.odd E
+            %span.blue R
+            %span -
+            %span.odd H
+            %span E
             %span.odd L
-            %span L
-            %span.odd O
-            %span.blue W
-            %span.odd O
+            %span P
+            %span.odd E
             %span R
-            %span.odd L
-            %span D
       .letters-pool
         .all-box
           #down-count
           %ul
         .letter-box
-          %input#first-letter.odd{:value => 'J',:maxlength => '1',:title => "Type 25 letters here", :rel => "tooltip"}
+          %input#first-letter.odd{:value => '>',:maxlength => '1',:title => "Type 25 letters here", :rel => "tooltip"}
+          %input{:value => ':',:maxlength => '1'}
+          %input.odd{:value => '',:maxlength => '1'}
+          %input{:value => '',:maxlength => '1'}
+          %input.odd.blue.double{:value => '',:maxlength => '1'}
+          %input{:value => '',:maxlength => '1'}
+          %input.odd{:value => 'J',:maxlength => '1'}
           %input{:value => 'U',:maxlength => '1'}
-          %input.odd{:value => 'S',:maxlength => '1'}
+          %input.odd.blue.double{:value => 'S',:maxlength => '1'}
           %input.blue{:value => 'T',:maxlength => '1'}
-          %input.odd.blue.double{:value => '-',:maxlength => '1'}
-          %input{:value => '-',:maxlength => '1'}
-          %input.odd{:value => 'T',:maxlength => '1'}
-          %input{:value => 'A',:maxlength => '1'}
-          %input.odd.blue.double{:value => 'P',:maxlength => '1'}
-          %input{:value => '-',:maxlength => '1'}
-          %input.odd{:value => '-',:maxlength => '1'}
-          %input.red{:value => 'H',:maxlength => '1'}
-          %input.odd{:value => 'E',:maxlength => '1'}
-          %input{:value => 'R',:maxlength => '1'}
-          %input.odd{:value => 'E',:maxlength => '1'}
-          %input.red{:value => 'H',:maxlength => '1'}
-          %input.odd{:value => 'A',:maxlength => '1'}
-          %input{:value => 'V',:maxlength => '1'}
-          %input.odd{:value => 'E',:maxlength => '1'}
-          %input{:value => '-',:maxlength => '1'}
-          %input.odd{:value => '-',:maxlength => '1'}
+          %input.odd{:value => 'F',:maxlength => '1'}
+          %input.red{:value => 'O',:maxlength => '1'}
+          %input.odd.red{:value => 'R',:maxlength => '1'}
+          %input{:value => '',:maxlength => '1'}
+          %input.odd{:value => '',:maxlength => '1'}
+          %input{:value => '',:maxlength => '1'}
+          %input.odd{:value => '',:maxlength => '1'}
           %input.red.double{:value => 'F',:maxlength => '1'}
-          %input.odd.red{:value => 'U',:maxlength => '1'}
-          %input.red{:value => 'N',:maxlength => '1'}
-          %input.odd{:value => '-',:maxlength => '1'}
+          %input.odd{:value => 'U',:maxlength => '1'}
+          %input{:value => 'N',:maxlength => '1'}
+          %input.odd{:value => '',:maxlength => '1'}
+          %input{:value => '',:maxlength => '1'}
+          %input.odd{:value => '',:maxlength => '1'}
+          %input{:value => '',:maxlength => '1'}
+          %input.odd{:value => '/',:maxlength => '1'}
     %footer.footer
       .copyright 
         %abbr{:title => "Letterpress Helper v1.0b"} Letterpress Helper
