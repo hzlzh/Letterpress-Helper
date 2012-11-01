@@ -15,12 +15,12 @@ jQuery(document).ready(function($) {
           if(typeof(show_4000) != "undefined") clearInterval(show_4000);
 
           var show_word = function() {
-              $('#down-count').html('Total:'+words.length).show();
+              $('#down-count').html('Total: {' + words.length + '}').show();
               var random_key = parseInt(Math.random() * words.length);
               var result_query = ".all-box li[data-group='" + words.length + "'] span";
               $result.html('<span class="blue">' + $($(result_query)[random_key]).html().split('').join('</span><span>') + '</span>');
             };
-            $all.append('<ul></ul>')
+          $all.append('<ul></ul>')
           for(index in words) {
             $all.find('ul').prepend('<li data-group="' + words.length + '"><span>' + words[index] + '</span></li>')
           }
@@ -31,8 +31,8 @@ jQuery(document).ready(function($) {
           }, 4000);
 
           show_100 = setInterval(function() {
-              $('#down-count').html($('#down-count').html()+'.');
-          }, 500);
+            //$('#down-count').html(parseFloat($('#down-count').html() - 0.1).toFixed(1));
+          }, 100);
         };
       var clear_box = function() {
           $('.letter-box input').val('');
@@ -46,13 +46,18 @@ jQuery(document).ready(function($) {
         };
 
       var get_words = function(API, query, length) {
+          
           var words = '';
           $.getJSON(API + query.toLowerCase() + '/' + length + '?jsoncallback=?', function(data) {
             if(data != '') {
               update_result($result, data)
               update_count(data[0].length)
             } else update_result($result, ["NULL:("])
-          }, 'json');
+          }, 'json').complete(function() {
+            setTimeout(function() {
+              $('#ajax-loading').fadeOut();
+            }, 1000);
+          });
         };
 
       var init = function() {
@@ -87,6 +92,7 @@ jQuery(document).ready(function($) {
   LH.init();
 
   $('#tool-bar input[type="submit"]').bind('click', function(e) {
+    $('#ajax-loading').show();
     e.preventDefault();
     LH.get_words(API, LH.get_query(), $('#word-count').val());
   });

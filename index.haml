@@ -32,12 +32,13 @@
           %span#word-left 18
           %input#word-count{:value => "7",:maxlength => '2', :title => "2. Type the length.", :rel => "tooltip"}
         %li.right
+          #ajax-loading
           %form
             %input#submit-button{:value => "Submit", :type => "submit", :title => "3. Learn some words.", :rel => "tooltip"}
     .wrapper
       .result-box
         .result
-          .letter-box#result-box{:title => "4. Double click letter load dictionary.", :rel => "tooltip"}
+          .letter-box#result-box{:title => "4. Double click to load dictionary.", :rel => "tooltip"}
             %span.odd L
             %span.red E
             %span.odd T
