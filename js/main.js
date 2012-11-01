@@ -63,9 +63,8 @@ jQuery(document).ready(function($) {
           $('#word-count').tooltip({placement:'right'}).tooltip('show');
           $('#first-letter').tooltip({placement:'left'}).tooltip('show');
           $('#submit-button').tooltip({placement:'bottom'}).tooltip('show');
-          setTimeout(function() {
-            $('#word-count,#first-letter,#submit-button').tooltip('hide');
-          }, 5000);
+          $('#readme').tooltip({placement:'top'});
+          
           ANSW.Trigger.showLogoIfEnabled("AnswerTips_anim_105x25.gif","");
         };
 
@@ -91,13 +90,13 @@ jQuery(document).ready(function($) {
 
   $('.letters-pool .letter-box input, .count-board input').mouseenter(function() {
     $(this).trigger('startRumble');
-    $(this).select();
+    $(this).focus();
   }).mouseleave(function() {
     var temp = $(this);
     setTimeout(function() {
       temp.trigger('stopRumble');
     }, 420);
-  }).keypress(function() {
+  }).keyup(function() {
     var temp = $(this);
     setTimeout(function() {
       temp.trigger('stopRumble');
