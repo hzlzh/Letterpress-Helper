@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
           if(typeof(show_4000) != "undefined") clearInterval(show_4000);
 
           var show_word = function() {
-              $('#down-count').html('Total: {' + words.length + '}').show();
+              $('#down-count').html('Total: { ' + words.length + ' }').show();
               var random_key = parseInt(Math.random() * words.length);
               var result_query = ".all-box li[data-group='" + words.length + "'] span";
               $result.html('<span class="blue">' + $($(result_query)[random_key]).html().split('').join('</span><span>') + '</span>');

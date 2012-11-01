@@ -591,6 +591,7 @@ body ul li {
   height: 16px;
   padding-left: 2px;
   border-bottom: 1px solid #f0efec;
+  background-color: #00a2ff;
 }
 .wrapper .letters-pool .all-box ul {
   min-height: 98px;
