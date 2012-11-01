@@ -505,13 +505,18 @@ body ul li {
 }
 .wrapper .letters-pool .all-box {
   max-height: 400px;
-  overflow-y: scroll;
+  overflow-y: auto;
   position: absolute;
   right: -130px;
   width: 120px;
 }
+.wrapper .letters-pool .all-box #down-count {
+  display: block;
+  text-align: center;
+}
 .wrapper .letters-pool .all-box ul li {
   text-transform: capitalize;
+  padding-left: 2px;
 }
 .footer {
   margin-top: 14px;

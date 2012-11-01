@@ -12,9 +12,22 @@ jQuery(document).ready(function($) {
         };
 
       var update_result = function($result, words) {
-          $result.html('<span class="blue">' + words[0].split('').join('</span><span>') + '</span>');
+        var show_word = function(){
+          $('#down-count').html(4);
+          var random_key = parseInt(Math.random() * words.length);
+          $result.html('<span class="blue">' + words[random_key].split('').join('</span><span>') + '</span>');
+        };
+        show_word();
+        setInterval(function(){
+          show_word();
+        },4000);
+        
+        setInterval(function(){
+          $('#down-count').html(parseFloat($('#down-count').html()-0.1).toFixed(1));
+        },100);
+
           for (index in words){
-            $all.append('<li>'+words[index]+'</li>')
+            $all.prepend('<li>'+words[index]+'</li>')
           }
         };
 
@@ -28,12 +41,11 @@ jQuery(document).ready(function($) {
 
       var get_words = function(API, query, length) {
           var words = '';
-          $.ajaxSettings.async = false;
           $.getJSON(API + query.toLowerCase() + '/' + length + '?jsoncallback=?', function(data) {
             if(data != '') {
               update_result($result, data)
               update_count(data[0].length)
-            } else update_result($result, 'NULL:(')
+            } else update_result($result, ["NULL:("])
           }, 'json');
         };
 
