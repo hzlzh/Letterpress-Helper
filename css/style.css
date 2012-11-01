@@ -480,6 +480,17 @@ body ul li {
   font-weight: bolder;
   margin-top: 5px;
   margin-right: 10px;
+  position: relative;
+}
+.header ul#tool-bar li.right #ajax-loading {
+  display: none;
+  background: url("images/loading.gif") no-repeat scroll center center transparent;
+  float: left;
+  height: 18px;
+  margin-top: 8px;
+  position: absolute;
+  right: 70px;
+  width: 18px;
 }
 .header ul#tool-bar li.right input {
   font-weight: bolder;
@@ -578,7 +589,8 @@ body ul li {
 .wrapper .letters-pool .all-box #down-count {
   display: none;
   height: 16px;
-  margin-left: 2px;
+  padding-left: 2px;
+  border-bottom: 1px solid #f0efec;
 }
 .wrapper .letters-pool .all-box ul {
   min-height: 98px;
