@@ -5,6 +5,7 @@
 
 @import "reset.less";
 @import "elements.less";
+@import "tooltip.less";
 
 @font-face {
     font-family: "museo_sans_rounded_500regular";
@@ -32,10 +33,9 @@ body{font-family:"museo_sans_rounded_500regular";font-size:14px;background-color
     li.left{float:left;font-weight: bolder;margin-top: 13px;margin-left: 21px;cursor:pointer;
       span{display: block;}
     }
-    li.count-board{overflow: hidden;line-height:20px;font-size: 20px;left: 54%;margin-left: -76px;margin-top: 16px;position: absolute;width: 152px;
+    li.count-board{overflow: hidden;line-height:20px;font-size: 20px;left: 50%;margin-left: -76px;margin-top: 16px;position: absolute;width: 152px;
       #word-left{color: @d-red;float:left;}
       #word-count{height: 20px;line-height: 20px;color: @d-blue;float:right;border:none;width: 24px;background-color: transparent;}
-      .tips{float: right;font-size: 12px;color: @l-blue;}
     }
     li.right{float:right;font-weight: bolder;margin-top: 5px;margin-right: 10px;
       input{font-weight: bolder;width:65px;border: none;color:#f0efec;background-color: #a9d9f2;padding: 10px 14px;display: block;.rounded(10px);cursor:pointer;

@@ -12,17 +12,21 @@ jQuery(document).ready(function($) {
         };
 
       var update_result = function($result, words) {
+        //clearInterval(show_4000);
+
         var show_word = function(){
           $('#down-count').html(4);
           var random_key = parseInt(Math.random() * words.length);
           $result.html('<span class="blue">' + words[random_key].split('').join('</span><span>') + '</span>');
         };
+
         show_word();
-        setInterval(function(){
+
+        show_4000 = setInterval(function(){
           show_word();
         },4000);
         
-        setInterval(function(){
+        show_100 = setInterval(function(){
           $('#down-count').html(parseFloat($('#down-count').html()-0.1).toFixed(1));
         },100);
 
@@ -30,7 +34,9 @@ jQuery(document).ready(function($) {
             $all.prepend('<li>'+words[index]+'</li>')
           }
         };
-
+      var clear_box = function() {
+        $('.letter-box input').val('');
+      };
       var get_query = function() {
           var query = '';
           $obj.each(function() {
@@ -54,11 +60,18 @@ jQuery(document).ready(function($) {
           $obj.jrumble().jrumble({
             speed: 0
           });
+          $('#word-count').tooltip({placement:'right'}).tooltip('show');
+          $('#first-letter').tooltip({placement:'left'}).tooltip('show');
+          $('#submit-button').tooltip({placement:'bottom'}).tooltip('show');
+          setTimeout(function() {
+            $('#word-count,#first-letter,#submit-button').tooltip('hide');
+          }, 5000);
         };
 
       return {
         init: init,
         get_query: get_query,
+        clear_box: clear_box,
         get_words: get_words
       };
     }();
@@ -68,6 +81,11 @@ jQuery(document).ready(function($) {
   $('#tool-bar input[type="submit"]').bind('click', function(e) {
     e.preventDefault();
     LH.get_words(API, LH.get_query(), $('#word-count').val());
+  });
+
+  $('#clear-box').bind('click',function(e){
+    e.preventDefault();
+    LH.clear_box();
   });
 
   $('.letters-pool .letter-box input, .count-board input').mouseenter(function() {
