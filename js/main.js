@@ -19,12 +19,16 @@ jQuery(document).ready(function($) {
           $('#down-count').html(4);
           var random_key = parseInt(Math.random() * words.length);
           var result_query = ".all-box li[data-group='" + words.length + "'] span";
+          console.log(result_query);
+          console.log($(result_query)[random_key]);
           $result.html('<span class="blue">' + $($(result_query)[random_key]).html().split('').join('</span><span>') + '</span>');
         };
 
-        for (index in words){
-          $all.prepend('<li data-group="'+words.length+'"><span>'+words[index]+'</span></li>')
-        }
+
+
+          for (index in words){
+            $all.prepend('<li data-group="'+words.length+'"><span>'+words[index]+'</span></li>')
+          }
         show_word();
 
         show_4000 = setInterval(function(){
