@@ -31,62 +31,59 @@
           %span#clear-box Clear
         %li.count-board
           %span#word-left 15
-          %input#word-count{:value => "10",:maxlength => '2', :title => "2. Type the length.", :rel => "tooltip"}
+          %input#word-count{:value => "10",:maxlength => '2', :title => "Type the length here!", :rel => "tooltip"}
         %li.right
           %form
-            %input#submit-button{:value => "Submit", :type => "submit", :title => "3. Learn some words.", :rel => "tooltip"}
+            %input#submit-button{:value => "Submit", :type => "submit", :title => "Show me the words.", :rel => "tooltip"}
     .wrapper
       .result-box
         .result
           .letter-box
-            %span.odd L
-            %span.red E
-            %span.odd T
-            %span T
-            %span.odd E
-            %span.blue R
-            %span -
             %span.odd H
-            %span E
+            %span.red E
             %span.odd L
-            %span P
-            %span.odd E
+            %span L
+            %span.odd O
+            %span.blue W
+            %span.odd O
             %span R
+            %span.odd L
+            %span D
       .letters-pool
         .all-box
           #down-count
           %ul
         .letter-box
-          %input#first-letter.odd{:value => '>',:maxlength => '1',:title => "1. Type 25 letters here", :rel => "tooltip"}
-          %input{:value => ':',:maxlength => '1'}
-          %input.odd{:value => '',:maxlength => '1'}
-          %input{:value => '',:maxlength => '1'}
-          %input.odd.blue.double{:value => '',:maxlength => '1'}
-          %input{:value => '',:maxlength => '1'}
-          %input.odd{:value => 'J',:maxlength => '1'}
+          %input#first-letter.odd{:value => 'J',:maxlength => '1',:title => "Type 25 letters here", :rel => "tooltip"}
           %input{:value => 'U',:maxlength => '1'}
-          %input.odd.blue.double{:value => 'S',:maxlength => '1'}
+          %input.odd{:value => 'S',:maxlength => '1'}
           %input.blue{:value => 'T',:maxlength => '1'}
-          %input.odd{:value => 'F',:maxlength => '1'}
-          %input.red{:value => 'O',:maxlength => '1'}
-          %input.odd.red{:value => 'R',:maxlength => '1'}
-          %input{:value => '',:maxlength => '1'}
-          %input.odd{:value => '',:maxlength => '1'}
-          %input{:value => '',:maxlength => '1'}
-          %input.odd{:value => '',:maxlength => '1'}
+          %input.odd.blue.double{:value => '-',:maxlength => '1'}
+          %input{:value => '-',:maxlength => '1'}
+          %input.odd{:value => 'T',:maxlength => '1'}
+          %input{:value => 'A',:maxlength => '1'}
+          %input.odd.blue.double{:value => 'P',:maxlength => '1'}
+          %input{:value => '-',:maxlength => '1'}
+          %input.odd{:value => '-',:maxlength => '1'}
+          %input.red{:value => 'H',:maxlength => '1'}
+          %input.odd{:value => 'E',:maxlength => '1'}
+          %input{:value => 'R',:maxlength => '1'}
+          %input.odd{:value => 'E',:maxlength => '1'}
+          %input.red{:value => 'H',:maxlength => '1'}
+          %input.odd{:value => 'A',:maxlength => '1'}
+          %input{:value => 'V',:maxlength => '1'}
+          %input.odd{:value => 'E',:maxlength => '1'}
+          %input{:value => '-',:maxlength => '1'}
+          %input.odd{:value => '-',:maxlength => '1'}
           %input.red.double{:value => 'F',:maxlength => '1'}
-          %input.odd{:value => 'U',:maxlength => '1'}
-          %input{:value => 'N',:maxlength => '1'}
-          %input.odd{:value => '',:maxlength => '1'}
-          %input{:value => '',:maxlength => '1'}
-          %input.odd{:value => '',:maxlength => '1'}
-          %input{:value => '',:maxlength => '1'}
-          %input.odd{:value => '/',:maxlength => '1'}
+          %input.odd.red{:value => 'U',:maxlength => '1'}
+          %input.red{:value => 'N',:maxlength => '1'}
+          %input.odd{:value => '-',:maxlength => '1'}
     %footer.footer
       .copyright 
-        %abbr#readme{:title => "Letterpress Helper v1.0b",:title => "NO OFFENSE, Letterpress(iOS) is an awesome Game, we love it and happen to make this tool, hope u won't use it in real battle games :(", :rel => "tooltip"} Letterpress Helper
+        %abbr{:title => "Letterpress Helper v1.0b"} Letterpress Helper
         on 
-        %a.red{:href => "https://github.com/hzlzh/Letterpress-Helper/", :target => "_blank"} Github
+        %a.red{:href => "https://github.com/hzlzh/Letterpress-Helper", :target => "_blank"} Github
         \ by 
         %a{:href => "https://github.com/codersnake", :target => "_blank"} @CoderSnake
         \ & 
