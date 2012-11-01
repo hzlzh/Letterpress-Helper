@@ -35,7 +35,7 @@ body{font-family:"museo_sans_rounded_500regular";font-size:14px;background-color
     }
     li.count-board{overflow: hidden;line-height:20px;font-size: 20px;left: 50%;margin-left: -76px;margin-top: 16px;position: absolute;width: 152px;
       #word-left{color: @d-red;float:left;}
-      #word-count{height: 20px;line-height: 20px;color: @d-blue;float:right;border:none;width: 24px;background-color: transparent;}
+      #word-count{outline: none;height: 20px;line-height: 20px;color: @d-blue;float:right;border:none;width: 24px;background-color: transparent;}
     }
     li.right{float:right;font-weight: bolder;margin-top: 5px;margin-right: 10px;
       input{font-weight: bolder;width:65px;border: none;color:#f0efec;background-color: #a9d9f2;padding: 10px 14px;display: block;.rounded(10px);cursor:pointer;
@@ -77,9 +77,9 @@ body{font-family:"museo_sans_rounded_500regular";font-size:14px;background-color
     .letter-box{overflow: hidden;
       input{float: left;font-size:68px;}
     }
-    .all-box{max-height: 400px;overflow-y: auto;position: absolute;right: -130px;width: 120px;
-      #down-count{display: block;text-align: center;}
-      ul{
+    .all-box{max-height: 228px;overflow-y: auto;position: absolute;right: -130px;width: 114px;background-color: #A9D9F2;
+      #down-count{display: none;height: 16px;margin-left: 2px;}
+      ul{min-height: 98px;
         li{text-transform: capitalize;padding-left: 2px;}
       }
     }

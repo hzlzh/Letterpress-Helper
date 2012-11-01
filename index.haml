@@ -4,10 +4,9 @@
     %meta{'charset' => 'UTF-8'}/
     %meta{:name => "viewport", :content  => "width=device-width"}
     %title Letterpress-Helper
-    %meta{:name => "keywords", :content  => ""}
-    %meta{:name => "description", :content  => ""}
+    %meta{:name => "keywords", :content  => "letterpress,helper,tool,plugin,dictionary,iphone,game"}
+    %meta{:name => "description", :content  => "Letterpress-Helper is a tool for Letterpress, help you learn more words which you don't spell at the first time."}
     %link{:rel => "stylesheet", :href  => "css/style.css"}
-    %link{:rel => "alternate", :typr => "application/rss+xml", :title => "RSS Feed", :href  => "css/style.css"}
     %link{:rel => "shortcut icon", :href => "favicon.ico"}
     %script{:src  => "js/libs/modernizr.js"}
     %script{:src  => "http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
@@ -30,34 +29,33 @@
         %li.left
           %span#clear-box Clear
         %li.count-board
-          %span#word-left 15
-          %input#word-count{:value => "10",:maxlength => '2', :title => "2. Type the length.", :rel => "tooltip"}
+          %span#word-left 18
+          %input#word-count{:value => "7",:maxlength => '2', :title => "2. Type the length.", :rel => "tooltip"}
         %li.right
           %form
             %input#submit-button{:value => "Submit", :type => "submit", :title => "3. Learn some words.", :rel => "tooltip"}
     .wrapper
       .result-box
         .result
-          .letter-box
+          .letter-box#result-box{:title => "4. Double click letter load dictionary.", :rel => "tooltip"}
             %span.odd L
             %span.red E
             %span.odd T
             %span T
             %span.odd E
-            %span.blue R
-            %span -
-            %span.odd H
-            %span E
-            %span.odd L
-            %span P
-            %span.odd E
             %span R
+            %span.odd -
+            %span.blue H
+            %span.odd E
+            %span L
+            %span.odd P
+            %span E
+            %span.odd R
       .letters-pool
         .all-box
           #down-count
-          %ul
         .letter-box
-          %input#first-letter.odd{:value => '>',:maxlength => '1',:title => "1. Type 25 letters here", :rel => "tooltip"}
+          %input#first-letter.odd{:value => '>',:maxlength => '1',:title => "1. Type 1~25 letters here", :rel => "tooltip"}
           %input{:value => ':',:maxlength => '1'}
           %input.odd{:value => '',:maxlength => '1'}
           %input{:value => '',:maxlength => '1'}
@@ -84,13 +82,13 @@
           %input.odd{:value => '/',:maxlength => '1'}
     %footer.footer
       .copyright 
-        %abbr#readme{:title => "Letterpress Helper v1.0b",:title => "NO OFFENSE, Letterpress(iOS) is an awesome Game, we love it and happen to make this tool, hope u won't use it in real battle games :(", :rel => "tooltip"} Letterpress Helper
+        %abbr#readme{:title => "Letterpress Helper v1.0b",:title => "NO OFFENSE, Letterpress(iOS) is an awesome Game, we love it and just happen to make this tool, hope u won't use it in real battle games :(", :rel => "tooltip"} Letterpress Helper
         on 
         %a.red{:href => "https://github.com/hzlzh/Letterpress-Helper/", :target => "_blank"} Github
         \ by 
         %a{:href => "https://github.com/codersnake", :target => "_blank"} @CoderSnake
         \ & 
-        %a#name{:href => "https://twitter.com/hzlzh", :target => "_blank", :rel => "tooltip", :title => "xxxxx"} @hzlzh
+        %a#name{:href => "https://twitter.com/hzlzh", :target => "_blank"} @hzlzh
         .tweet-button
           <a href="https://twitter.com/share" class="twitter-share-button" >Tweet</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
