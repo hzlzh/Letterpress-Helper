@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-  var API = 'http://dicts.zlz.im/index.php/api/index/';
+  var API = 'http://dicts.zlz.im/api/index/';
 
   var LH = function() {
       var $obj = $('.letters-pool .letter-box input');
