@@ -4,17 +4,8 @@ import copy
 import time
 from sys import argv
 
-def input():
-	line_1 = raw_input("line _1 >")
-	line_2 = raw_input("line _2 >")
-	line_3 = raw_input("line _3 >")
-	line_4 = raw_input("line _4 >")
-	line_5 = raw_input("line _5 >")
-	whole  = line_1+line_2+line_3+line_4+line_5
-	return list(whole)
-
 def read_dic():
-	target = open('dic.txt','r')
+	target = open('dict.txt','r')
 	string = target.read()
 	string_list = string.split(',')
 	return string_list
@@ -52,41 +43,15 @@ def compair(dic_list,input_word,line):
 
 
 
-
-script,line = argv
-dic_list   = read_dic()
-input_word = input()
-
 starttime  = time.clock()
+
+script,line,string_25 = argv
+dic_list   = read_dic()
+input_word = list(string_25)
+
 result_list = compair(dic_list,input_word,line)
+
 endtime    = time.clock()
 
 print result_list
-print (endtime-starttime)
-
-
-
-
-# def sort():
-# 	a = ''
-# 	r = 'words'
-
-
-
-# 	for root,dirs,files in os.walk(r):
-# 	    for f in files:
-# 	        txt = open(root+'/'+f)
-# 	        a =  txt.read()+a
-
-# 	result = a.split('\n')
-# 	after_sorted = sorted(result,key=lambda x:len(x),reverse=True)
-
-# 	new_line = ''
-# 	for word in after_sorted:
-# 		word = word + ','
-# 		new_line = new_line+ word
-		
-
-# 	target = open('dic.txt','w')
-# 	target.write(new_line)
-# 	print 'ok!\n'
+print 'Time cost: '+str(endtime-starttime)
