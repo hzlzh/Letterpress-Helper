@@ -1,9 +1,21 @@
-*Different `API` versions:*   
-**PHP:***(Jsonp)* `../API/PHP/` by @[CoderSnake]  
+*Different `API` versions:* 
+  
+----
+**PHP:***(Jsonp)* `../API/PHP/`   
 -- base on `codeigniter 2.1.3`  
-**Python:***(Command line)* `../API/Python/` by @[Max-Liu]  
+**Example:**  
+Find words with length = 9 :  
+`http://dicts.zlz.im/api/index/nkhsdyeimwkihfprqooeujfrv/9`  
+Find words with length > 0 :   
+`http://dicts.zlz.im/api/index/nkhsdyeimwkihfprqooeujfrv/0`  
+Find words with `abcde` > 0 :   
+`http://dicts.zlz.im/api/index/abcde/0` 
 
+----
+**Python:***(Command line)*  
+**Example:**  
+Find words with length > 9 : 
+>bash_$: python letterpress-helper.py 9 nkhsdyeimwkihfprqooeujfrv
 
-[codersnake]: https://github.com/codersnaker
-[hzlzh]: https://twitter.com/hzlzh 'Follow me on Twitter.'
-[Max-Liu]: https://github.com/Max-Liu
+Find words with `abcde` > 0 :  
+>bash_$: python letterpress-helper.py 0 abced
