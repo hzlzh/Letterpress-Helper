@@ -10,6 +10,6 @@ NO OFFENSE, [![Letterpress](http://hzlzh.github.io/Letterpress-Helper/favicon.pn
 **PHP:** *(Jsonp)* `../API/PHP/` by @[junixchoi]  
 **Python:** *(Command line)* `../API/Python/` by @[Max-Liu]  
 
-[codersnake]: https://github.com/junixchoi
+[junixchoi]: https://github.com/junixchoi
 [hzlzh]: https://twitter.com/hzlzh 'Follow me on Twitter.'
 [Max-Liu]: https://github.com/Max-Liu
